@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body style="background-image: url(pexels-x-y-2403402.jpg); background-size: cover;">
+    <div class="col-lg-6 col-md-4 col-sm-12 kesh text-center">
+        <h1 class="text-light ">Weather Condition Checker</h1>
+        <div class="cash mx-auto mt-5">
+            <input type="text" class="form-control form-control-sm" id="inp" placeholder="Enter City Name">
+            <button onclick="CheckWeather()"><img src="Vector-Search-PNG-Image.png" class="img-fluid" alt=""></button>
+        </div>
+        <div class="text-center text-white" id="error" style="display: none;">
+            <h4>Invalid City Name</h4>
+        </div>
+        <div class="text-center text-white" id="error2" style="display: none;">
+            <h4>City not found</h4>
+        </div>
+        <div class="result text-white" id="weatherInfo" style="display: none;">
+        <img src="" class="w-25" id="weatherIcon" />
+            <h1 id="temp"></h1>
+            <h1 id="name"></h1>
+            <h1 id="city"></h1>
+            <div class="cont2 mx-2">
+                <div class="col">
+                <img src="humidity.png" class="img-fluid w-25" alt="">
+                <div class="text-white">
+                    <p id="humidity" class="hum"></p>
+                    <h2>humidity</h2>
+                </div>
+            </div>
+            <div class="col text-white mx-5">
+                <img src="winds-weather-symbol.png" class="img-fluid w-25" alt="">
+                <div>
+                    <p class="win" id="wind"></p>
+                    <h2>Wind Speed</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="weather">
+        <img src="" class="weather" id="weatherIcon" alt="">
+    </div> -->
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
